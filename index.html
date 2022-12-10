@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Title</title>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link href="./reset.css" rel="stylesheet"/>
+</head>
+
+<body>
+<header class="container header">
+    <a href="#">
+        <img alt="logo" class="logo-img" src="./img/logo.svg">
+    </a>
+
+    <label>
+        <input class="search" placeholder="Search for places" type="text">
+    </label>
+
+    <div class="search-settings">
+        <img alt="setting" src="./img/setting-head.svg">
+    </div>
+
+    <div class="location">
+        <img alt="location" class="location__img" src="./img/location.svg">
+        <p class="location__text">New York/ Dc</p>
+    </div>
+
+    <div class="alerts relative">
+        <img alt="alerts" src="./img/alerts.svg">
+        <div class="alerts__unread absolute"></div>
+    </div>
+
+    <img alt="profile-icon" class="profile-icon" src="./img/profile-icon.svg">
+</header>
+
+<main class="container main">
+    <nav class="navigation">
+        <ul class="navigation__list ">
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="dashboard" class="nav-list__img" src="./img/Dashboard.svg">
+                <a class="nav-list__color" href="#">Dashboard</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="note" class="nav-list__img" src="./img/note.svg">
+                <a class="nav-list__color" href="#">Note’s</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="moon" class="nav-list__img" src="./img/moon.svg">
+                <a class="nav-list__color" href="#">Theme</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="profile-user" class="nav-list__img" src="./img/profile-user.svg">
+                <a class="nav-list__color" href="#">Account</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="microscope" class="nav-list__img" src="./img/microscope.svg">
+                <a class="nav-list__color" href="#">Explore</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="graph" class="nav-list__img" src="./img/graph.svg">
+                <a class="nav-list__color" href="#">Graph</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="sms-edit" class="nav-list__img" src="./img/sms-edit.svg">
+                <a class="nav-list__color" href="#">Messages</a>
+            </li>
+            <li class="navigation__text nav-list relative">
+                <div class="nav-list__dropdown absolute"></div>
+                <img alt="setting" class="nav-list__img" src="./img/setting.svg">
+                <a class="nav-list__color" href="#">Setting</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <section class="basic">
+            <h1 class="basic__head-text">Discover World</h1>
+            <ul class="basic__reference">
+                <li class="basic__reference-text">Recommended</li>
+                <li class="basic__reference-text">Popular Places</li>
+                <li class="basic__reference-text">Trip’s</li>
+            </ul>
+
+            <ul class="basic__places">
+                <li class="basic__place place">
+                    <figure class="place__explanation explanation relative">
+                        <button class="explanation__like absolute" type="button">
+                            <img alt="like" src="./img/heart.svg">
+                        </button>
+                        <img alt="canada" class="explanation__img" src="./img/canada.svg">
+                        <figcaption>
+                            <p class="explanation__text">Moonlight Night</p>
+                            <div class="explanation__block caption relative">
+                                <img alt="location" class="caption__location-mini" src="./img/location-mini.svg">
+                                <p class="caption__text">Canada</p>
+                                <img alt="star" class="caption__star absolute" src="./img/star.svg">
+                                <p class="caption__text">4.7</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="basic__place place">
+                    <figure class="place__explanation explanation relative">
+                        <button class="explanation__like absolute" type="button">
+                            <img alt="like" src="./img/heart.svg">
+                        </button>
+                        <img alt="africa" class="explanation__img" src="./img/africa.svg">
+                        <figcaption>
+                            <p class="explanation__text">Sahara Desert</p>
+                            <div class="explanation__block caption relative">
+                                <img alt="location" class="caption__location-mini" src="./img/location-mini.svg">
+                                <p class="caption__text">Africa</p>
+                                <img alt="star" class="caption__star absolute" src="./img/star.svg">
+                                <p class="caption__text">4.9</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li class="basic__place place">
+                    <figure class="place__explanation explanation relative">
+                        <button class="explanation__like absolute" type="button">
+                            <img alt="like" src="./img/heart.svg">
+                        </button>
+                        <img alt="new-york" class="explanation__img" src="./img/new-york.svg">
+                        <figcaption>
+                            <p class="explanation__text">Night Camping</p>
+                            <div class="explanation__block caption relative">
+                                <img alt="location" class="caption__location-mini" src="./img/location-mini.svg">
+                                <p class="caption__text-york-first">New York</p>
+                                <img alt="star" class="caption__star-york absolute" src="./img/star.svg">
+                                <p class="caption__text-york">5.0</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </section>
+        <section class="event">
+            <h2 class="event__head">Event Dates</h2>
+            <div class="event__calendar">
+                <time class="event__date-head">January 15-2022</time>
+            </div>
+        </section>
+
+        <ul class="register">
+            <li class="register__list">
+                <p class="register__text">Mo</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">12</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">Tu</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">13</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">We</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">14</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">Th</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">15</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">Fr</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">16</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">St</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">17</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">Su</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">18</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">Mo</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">19</p>
+            </li>
+
+            <li class="register__list">
+                <p class="register__text">Tu</p>
+                <div class="register__indicator"></div>
+                <p class="register__text-number">20</p>
+            </li>
+        </ul>
+
+        <ul class="track">
+            <li class="track__list">
+                <figure class="track__figure scenery">
+                    <img alt="track-evening" class="scenery__img" src="./img/track-evening.svg">
+                    <figcaption class="scenery__signature signature">
+                        <div class="signature__travel">
+                            <p class="signature__text">Netherlands Travel Tour</p>
+                            <div class="signature__grade grade relative">
+                                <img alt="star" class="grade__img absolute" src="./img/star.svg">
+                                <p class="grade__text">4.7</p>
+                            </div>
+                        </div>
+                        <div class="signature__pause">
+                            <img alt="pause" class="signature__pause-img" src="./img/pause.svg">
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <figure class="brazil relative">
+            <img alt="brazil" class="brazil__img" src="./img/brazil.svg">
+
+            <div class="brazil__like absolute">
+                <img alt="like" src="./img/heart.svg">
+            </div>
+
+            <ul class="brazil__landscapes absolute">
+                <li>
+                    <img alt="like" src="./img/evening-mountains.svg">
+                </li>
+                <li>
+                    <img alt="like" src="./img/morning-mountains.svg">
+                </li>
+                <li>
+                    <img alt="like" src="./img/japan.svg">
+                </li>
+                <li>
+                    <img alt="like" src="./img/tropic.svg">
+                </li>
+            </ul>
+
+            <figcaption class="brazil__explication explication">
+                <div class="explication__block">
+                    <p class="explication__text-head">Brazil Forest</p>
+                    <img alt="book-saved" class="explication__img" src="./img/book-saved.svg">
+                </div>
+
+                <p class="explication__text">
+                    I spend ten minutes or so doing a couple of Duolingo
+                    lessons in French so
+                </p>
+            </figcaption>
+        </figure>
+
+        <div class="booking relative">
+            <div class="relative">
+                <p class="booking__person-text absolute">per/person</p>
+                <p class="booking__price-text">$1540</p>
+            </div>
+            <button class="booking__button absolute" type="button">Book Travel</button>
+        </div>
+
+        <ul class="vouchers">
+            <li class="vouchers__list">
+                <figure class="vouchers__figure block">
+                    <img alt="lake" class="block__img" src="./img/beach.svg">
+                    <figcaption class="block__figcaption sign">
+                        <div class="sign__block-first block-first">
+                            <p class="block-first__text">Nature Lake</p>
+                            <div class="sign__block-last block-last">
+                                <img alt="location" class="block-last__img" src="./img/location-mini.svg">
+                                <p class="block-last__text"> Afghanistan</p>
+                            </div>
+                        </div>
+                        <div class="sign__like">
+                            <img alt="like" src="./img/heart.svg">
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="vouchers__list">
+                <figure class="vouchers__figure block">
+                    <img alt="desert" class="block__img" src="./img/desert.svg">
+                    <figcaption class="block__figcaption sign">
+                        <div class="sign__block-first block-first">
+                            <p class="block-first__text">Camel Ride</p>
+                            <div class="sign__block-last block-last">
+                                <img alt="location" class="block-last__img" src="./img/location-mini.svg">
+                                <p class="block-last__text"> Srilanka</p>
+                            </div>
+                        </div>
+                        <div class="sign__like">
+                            <img alt="like" src="./img/heart.svg">
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="vouchers__list">
+                <figure class="vouchers__figure block">
+                    <img alt="forest" class="block__img" src="./img/forest.svg">
+                    <figcaption class="block__figcaption sign">
+                        <div class="sign__block-first block-first">
+                            <p class="block-first__text">Mid Forest</p>
+                            <div class="sign__block-last block-last">
+                                <img alt="location" class="block-last__img" src="./img/location-mini.svg">
+                                <p class="block-last__text"> Brazil</p>
+                            </div>
+                        </div>
+                        <div class="sign__like">
+                            <img alt="like" src="./img/heart.svg">
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+</main>
+
+</body>

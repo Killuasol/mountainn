@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1472px;
+  margin: 0 auto;
+  padding: 0 51px 0 77px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sign__like, .brazil__like, .basic .explanation__like {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(25px);
+  cursor: pointer;
+  border: none;
+}
+
+.sign .block-last__text, .booking__person-text, .brazil .explication__text, .register__text, .basic__reference-text, .search::placeholder {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18333E;
+}
+
+.track .grade__text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.brazil .explication__text-head, .event__head, .basic__head-text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #18333E;
+}
+
+.event__date-head, .basic .caption__text-york-first, .basic .caption__text-york, .basic .caption__text, .navigation__text, .location__text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18333E;
+}
+
+.sign .block-first__text, .basic .explanation__text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+  color: #18333E;
+}
+
+.track .signature__text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.register__text-number {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #18333E;
+}
+
+.header {
+  height: 113px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-right: 147.8px;
+}
+
+.search {
+  width: 611px;
+  height: 53px;
+  background: #E9F1FA;
+  border-radius: 26.5px;
+  padding-left: 54px;
+  border: none;
+  margin-right: 62px;
+}
+.search-settings {
+  width: 53px;
+  height: 53px;
+  border-radius: 29px;
+  background: #18333E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 74px;
+}
+
+.location {
+  width: 127px;
+  height: 41px;
+  padding: 0 38px 0 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 2px solid #B4BCC4;
+  margin-right: 50px;
+}
+.location__img {
+  width: 18.75px;
+  height: 22.5px;
+}
+.alerts {
+  width: 52px;
+  height: 52px;
+  border-radius: 29px;
+  border: 1px solid #B4BCC4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 33px;
+}
+.alerts__unread {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #FF7F5C;
+  left: 45px;
+  top: -8px;
+}
+
+.main {
+  height: 1024px;
+  display: flex;
+}
+
+.navigation {
+  width: 266px;
+  height: 710px;
+  margin-right: 10px;
+}
+.navigation__list {
+  width: 150px;
+  height: 643px;
+  padding-top: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navigation__text {
+  display: flex;
+  align-items: center;
+}
+.navigation .nav-list {
+  transition: width 500ms, margin-right 500ms;
+}
+.navigation .nav-list:hover .nav-list__dropdown {
+  width: 123px;
+}
+.navigation .nav-list:hover .nav-list__img {
+  margin-right: 43px;
+}
+.navigation .nav-list__img {
+  margin-right: 12px;
+}
+.navigation .nav-list__color {
+  color: #18333E;
+}
+.navigation .nav-list__dropdown {
+  width: 0;
+  height: 63px;
+  background-color: #F9D44A;
+  border-radius: 0 31.5px 31.5px 0;
+  right: 104px;
+  top: -19px;
+  z-index: -1;
+}
+
+.basic {
+  width: 857px;
+  height: 597px;
+  padding-top: 27px;
+}
+.basic__head-text {
+  margin-bottom: 17px;
+}
+.basic__reference {
+  width: 353px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+.basic__places {
+  width: 783px;
+  height: 410px;
+  display: flex;
+  justify-content: space-between;
+}
+.basic__place {
+  width: 241px;
+  height: 410px;
+}
+.basic .explanation__img {
+  margin-bottom: 18px;
+}
+.basic .explanation__text {
+  margin-bottom: 7px;
+}
+.basic .explanation__block {
+  display: flex;
+  align-items: center;
+}
+.basic .explanation__like {
+  right: 29px;
+  bottom: 340px;
+}
+.basic .explanation__like:active {
+  background-color: red;
+}
+.basic .caption__location-mini {
+  margin-right: 10.48px;
+}
+.basic .caption__text {
+  width: 66px;
+  margin-right: 34px;
+  opacity: 0.8;
+}
+.basic .caption__text-york {
+  width: 66px;
+  opacity: 0.8;
+}
+.basic .caption__star-york {
+  top: 0;
+  right: 88px;
+  margin-right: 2px;
+}
+.basic .caption__text-york-first {
+  width: 66px;
+  margin-right: 58px;
+  opacity: 0.8;
+}
+.basic .caption__star {
+  top: 0;
+  right: 112px;
+  margin-right: 2px;
+}
+
+.event {
+  width: 784px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.event__calendar {
+  width: 174px;
+  height: 46px;
+  border: 1px solid #B4BCC4;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+.register {
+  width: 784px;
+  height: 111px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.register__list {
+  width: 64px;
+  height: 111px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 400ms, color 400ms;
+}
+.register__list:hover {
+  background-color: #18333E;
+}
+.register__list:hover .register__text {
+  color: #FFFFFF;
+}
+.register__list:hover .register__text-number {
+  color: #FFFFFF;
+}
+.register__list:hover .register__indicator {
+  background: #F9D44A;
+}
+.register__text {
+  opacity: 0.7;
+  z-index: 1;
+}
+.register__text-number {
+  z-index: 1;
+}
+.register__indicator {
+  width: 5px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.track {
+  width: 784px;
+  display: flex;
+}
+.track__figure {
+  display: flex;
+  align-items: center;
+  width: 433px;
+  height: 119px;
+  background: #18333E;
+  border-radius: 25px;
+  padding: 0 0 0 24px;
+}
+.track .scenery__img {
+  margin-right: 29px;
+}
+.track .scenery__signature {
+  width: 320px;
+  display: flex;
+}
+.track .signature__pause {
+  width: 27px;
+  height: 49px;
+  background: #F9D44A;
+  border-radius: 13.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.track .signature__travel {
+  margin-right: 93px;
+}
+.track .signature__text {
+  margin-bottom: 3px;
+}
+.track .signature__grade {
+  display: flex;
+  padding-left: 23px;
+}
+.track .signature____pause-img {
+  cursor: pointer;
+}
+.track .grade__img {
+  bottom: -14px;
+  left: -10px;
+}
+
+.brazil {
+  padding-top: 28px;
+  height: 416px;
+  margin-bottom: 71px;
+}
+.brazil__img {
+  margin-bottom: 27px;
+}
+.brazil__like {
+  top: 48px;
+  right: 27px;
+}
+.brazil__landscapes {
+  width: 289px;
+  height: 70px;
+  padding: 0 20px 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(2.5px);
+  border-radius: 15px;
+  top: 219px;
+  left: 34px;
+}
+.brazil .explication__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brazil .explication__img {
+  cursor: pointer;
+}
+
+.booking {
+  width: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.booking__person-text {
+  top: -14px;
+  right: 29px;
+}
+.booking__price-text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 64px;
+  color: #18333E;
+}
+.booking__button {
+  width: 175px;
+  height: 61px;
+  margin-bottom: 1px;
+  background: #18333E;
+  border-radius: 30.5px;
+  border: none;
+  cursor: pointer;
+  top: -10px;
+  right: 0;
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.vouchers {
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vouchers__list {
+  width: 392px;
+  height: 92px;
+}
+.vouchers__figure {
+  display: flex;
+}
+.vouchers .block__img {
+  margin-right: 18px;
+}
+.vouchers .block__figcaption {
+  width: 248px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign .block-first__text {
+  margin-bottom: 2px;
+}
+.sign__like {
+  width: 53px;
+  height: 53px;
+  border-radius: 30px;
+  background: #E9F1FA;
+  backdrop-filter: blur(2px);
+}
+.sign__block-last {
+  display: flex;
+}
+.sign .block-last__text {
+  opacity: 0.7;
+}
+.sign .block-last__img {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

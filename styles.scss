@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1472px;
+  margin: 0 auto;
+  padding: 0 51px 0 77px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+%grade {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(25px);
+  cursor: pointer;
+  border: none;
+}
+
+%text-small {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18333E;
+}
+
+%text-track-number {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+%text-head {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #18333E;
+}
+
+%text-medium {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18333E;
+}
+
+%text-list {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+  color: #18333E;
+}
+
+%text-track {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+%text-number {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #18333E;
+}
+
+//header
+.header {
+  height: 113px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-right: 147.8px;
+}
+
+.search {
+  width: 611px;
+  height: 53px;
+  background: #E9F1FA;
+  border-radius: 26.5px;
+  padding-left: 54px;
+  border: none;
+  margin-right: 62px;
+
+  &::placeholder {
+    @extend %text-small
+  }
+}
+
+.search-settings {
+  width: 53px;
+  height: 53px;
+  border-radius: 29px;
+  background: #18333E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 74px;
+}
+
+.location {
+  width: 127px;
+  height: 41px;
+  padding: 0 38px 0 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 2px solid #B4BCC4;;
+  margin-right: 50px;
+
+  &__img {
+    width: 18.75px;
+    height: 22.5px;
+  }
+
+  &__text {
+    @extend %text-medium
+  }
+}
+
+.alerts {
+  width: 52px;
+  height: 52px;
+  border-radius: 29px;
+  border: 1px solid #B4BCC4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 33px;
+
+  &__unread {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #FF7F5C;
+    left: 45px;
+    top: -8px;
+  }
+}
+
+.main {
+  height: 1024px;
+  display: flex;
+}
+
+.navigation {
+  width: 266px;
+  height: 710px;
+  margin-right: 10px;
+
+
+  &__list {
+    width: 150px;
+    height: 643px;
+    padding-top: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text {
+    @extend %text-medium;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    transition: width 500ms, margin-right 500ms;
+
+    &:hover {
+      .nav-list__dropdown {
+        width: 123px;
+      }
+
+      .nav-list__img {
+        margin-right: 43px;
+      }
+    }
+
+    &__img {
+      margin-right: 12px;
+    }
+
+    &__color {
+      color: #18333E;
+    }
+
+    &__dropdown {
+      width: 0;
+      height: 63px;
+      background-color: #F9D44A;
+      border-radius: 0 31.5px 31.5px 0;
+      right: 104px;
+      top: -19px;
+      z-index: -1;
+    }
+  }
+}
+
+//центральная колонка с основной информацией
+
+.basic {
+  width: 857px;
+  height: 597px;
+  padding-top: 27px;
+
+  &__head-text {
+    @extend %text-head;
+    margin-bottom: 17px;
+  }
+
+  &__reference {
+    width: 353px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+  }
+
+  &__reference-text {
+    @extend %text-small;
+  }
+
+  //nft world
+
+  &__places {
+    width: 783px;
+    height: 410px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__place {
+    width: 241px;
+    height: 410px;
+  }
+
+  .explanation {
+    &__img {
+      margin-bottom: 18px;
+    }
+
+    &__text {
+      @extend %text-list;
+      margin-bottom: 7px;
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+    }
+
+    &__like {
+      @extend %grade;
+      right: 29px;
+      bottom: 340px;
+
+      &:active {
+        background-color: red;
+      }
+    }
+  }
+
+  .caption {
+    &__location-mini {
+      margin-right: 10.48px;
+    }
+
+    &__text {
+      width: 66px;
+      @extend %text-medium;
+      margin-right: 34px;
+      opacity: 0.8;
+    }
+
+    &__text-york {
+      width: 66px;
+      @extend %text-medium;
+      opacity: 0.8;
+    }
+
+    &__star-york {
+      top: 0;
+      right: 88px;
+      margin-right: 2px;
+    }
+
+    &__text-york-first {
+      width: 66px;
+      @extend %text-medium;
+      margin-right: 58px;
+      opacity: 0.8;
+    }
+
+    &__star {
+      top: 0;
+      right: 112px;
+      margin-right: 2px;
+    }
+  }
+}
+
+//даты проведения мероприятий
+
+.event {
+  width: 784px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+
+  &__head {
+    @extend %text-head
+  }
+
+  &__calendar {
+    width: 174px;
+    height: 46px;
+    border: 1px solid #B4BCC4;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+  }
+
+  &__date-head {
+    @extend %text-medium
+  }
+}
+
+//календарь мероприятий по дням
+
+.register {
+  width: 784px;
+  height: 111px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+
+  &__list {
+    width: 64px;
+    height: 111px;
+
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 400ms, color 400ms;
+
+    &:hover {
+      background-color: #18333E;
+
+      .register__text {
+        color: #FFFFFF;
+      }
+
+      .register__text-number {
+        color: #FFFFFF;
+      }
+
+      .register__indicator {
+        background: #F9D44A;
+      }
+    }
+  }
+
+  &__text {
+    @extend %text-small;
+    opacity: 0.7;
+    z-index: 1;
+
+
+  }
+
+  &__text-number {
+    @extend %text-number;
+    z-index: 1;
+
+
+  }
+
+  &__indicator {
+    width: 5px;
+    height: 8px;
+    border-radius: 2px;
+  }
+}
+
+//track
+
+.track {
+  width: 784px;
+  display: flex;
+
+  &__figure {
+    display: flex;
+    align-items: center;
+    width: 433px;
+    height: 119px;
+    background: #18333E;
+    border-radius: 25px;
+    padding: 0 0 0 24px;
+  }
+
+  .scenery {
+    &__img {
+      margin-right: 29px;
+    }
+
+    &__signature {
+      width: 320px;
+      display: flex;
+    }
+
+  }
+
+  .signature {
+    &__pause {
+      width: 27px;
+      height: 49px;
+      background: #F9D44A;
+      border-radius: 13.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__travel {
+      margin-right: 93px;
+    }
+
+    &__text {
+      @extend %text-track;
+      margin-bottom: 3px;
+    }
+
+    &__grade {
+      display: flex;
+      padding-left: 23px;
+    }
+
+    &____pause-img {
+      cursor: pointer;
+    }
+  }
+
+  .grade {
+    &__text {
+      @extend %text-track-number;
+    }
+
+    &__img {
+      bottom: -14px;
+      left: -10px;
+    }
+  }
+}
+
+//  пейзажи
+
+.brazil {
+  padding-top: 28px;
+  height: 416px;
+  margin-bottom: 71px;
+
+  &__img {
+    margin-bottom: 27px;
+  }
+
+  &__like {
+    @extend %grade;
+    top: 48px;
+    right: 27px;
+  }
+
+  &__landscapes {
+    width: 289px;
+    height: 70px;
+    padding: 0 20px 0 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(2.5px);
+    border-radius: 15px;
+    top: 219px;
+    left: 34px;
+  }
+
+  &__explication {
+
+  }
+
+  .explication {
+    &__block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__text-head {
+      @extend %text-head;
+    }
+
+    &__text {
+      @extend %text-small;
+    }
+
+    &__img {
+      cursor: pointer;
+    }
+  }
+}
+
+.booking {
+  width: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+
+  &__person-text {
+    @extend %text-small;
+    top: -14px;
+    right: 29px;
+  }
+
+  &__price-text {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+    color: #18333E;
+  }
+
+  &__button {
+    width: 175px;
+    height: 61px;
+    margin-bottom: 1px;
+    background: #18333E;
+    border-radius: 30.5px;
+    border: none;
+    cursor: pointer;
+    top: -10px;
+    right: 0;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+
+  }
+}
+
+//путевки
+
+.vouchers {
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__list {
+    width: 392px;
+    height: 92px;
+  }
+
+  &__figure {
+    display: flex;
+  }
+
+  .block {
+    &__img {
+      margin-right: 18px;
+    }
+
+    &__figcaption {
+      width: 248px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+//блок с пояснением к картинке
+
+.sign {
+  .block-first {
+    &__text {
+      @extend %text-list;
+      margin-bottom: 2px;
+    }
+  }
+
+  &__like {
+    @extend %grade;
+    width: 53px;
+    height: 53px;
+    border-radius: 30px;
+    background: #E9F1FA;
+    backdrop-filter: blur(2px);
+  }
+
+  &__block-last {
+    display: flex;
+  }
+
+  .block-last {
+    &__text {
+      @extend %text-small;
+      opacity: 0.7;
+    }
+
+    &__img {
+      margin-right: 10px;
+    }
+  }
+}
+
