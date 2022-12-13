@@ -7,11 +7,16 @@ a {
 }
 
 .container {
-  width: 1472px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 51px 0 77px;
 }
 
+@media (min-width: 1600px) {
+  .container{
+    max-width: 1920px;
+  }
+}
 .absolute {
   position: absolute;
 }
@@ -108,11 +113,12 @@ a {
 }
 
 .search {
-  width: 611px;
+  width: 32.5%;
+  min-width: 210px;
   height: 53px;
   background: #E9F1FA;
   border-radius: 26.5px;
-  padding-left: 54px;
+  padding-left: 8.8%;
   border: none;
   margin-right: 62px;
 
@@ -122,8 +128,8 @@ a {
 }
 
 .search-settings {
-  width: 53px;
-  height: 53px;
+  min-width: 53px;
+  min-height: 53px;
   border-radius: 29px;
   background: #18333E;
   display: flex;
@@ -132,6 +138,13 @@ a {
   cursor: pointer;
   margin-right: 74px;
 }
+
+@media (max-width: 1600px) {
+  .location {
+    opacity: 1;
+  }
+}
+
 
 .location {
   width: 127px;
@@ -151,11 +164,14 @@ a {
   &__text {
     @extend %text-medium
   }
+  @media (max-width: 1600px) {
+    display: none;
+  }
 }
 
 .alerts {
-  width: 52px;
-  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
   border-radius: 29px;
   border: 1px solid #B4BCC4;
   display: flex;
@@ -183,7 +199,9 @@ a {
   width: 266px;
   height: 710px;
   margin-right: 10px;
-
+  @media (max-width: 720px) {
+    display: none;
+  }
 
   &__list {
     width: 150px;
@@ -234,7 +252,11 @@ a {
 }
 
 //центральная колонка с основной информацией
-
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .basic {
   width: 857px;
   height: 597px;
@@ -260,10 +282,13 @@ a {
   //nft world
 
   &__places {
-    width: 783px;
-    height: 410px;
+    width: 70%;
+    height: 30%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
   }
 
   &__place {
@@ -339,8 +364,8 @@ a {
 //даты проведения мероприятий
 
 .event {
-  width: 784px;
-  height: 48px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
